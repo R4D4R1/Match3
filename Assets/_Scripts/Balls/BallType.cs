@@ -1,0 +1,1 @@
+public enum BallType { Destructible, Indestructible }
