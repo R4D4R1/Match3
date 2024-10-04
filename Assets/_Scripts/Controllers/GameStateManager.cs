@@ -27,4 +27,9 @@ public class GameStateManager
         GameUIController.Instance.EnableGameOverMenu();
         Debug.Log("Game Over");
     }
+
+    public void GameStarted()
+    {
+        IsGameOver=false;
+    }
 }

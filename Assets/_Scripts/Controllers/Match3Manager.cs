@@ -69,6 +69,8 @@ public class Match3Manager : MonoBehaviour
         } while (!matchFinder.HasPossibleMoves());
 
         hintManager.ShowFirstHint(gridSizeX, gridSizeY);
+        scoreManager.ClearScore();
+        gameStateManager.GameStarted();
     }
 
     public async void OnBallClicked(Ball clickedBall)

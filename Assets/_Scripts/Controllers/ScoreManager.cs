@@ -17,6 +17,11 @@ public class ScoreManager
         LoadScores();
     }
 
+    public void ClearScore()
+    {
+        Score = 0;
+    }
+
     public void UpdateScore(int matchedCount)
     {
         Score += 10 + (matchedCount - 3) * 5;
